@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>10.17Study | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="计算薪水 1234567891011121314151617181920212223#include &lt;stdio.h&gt;int main()&amp;#123;    const double RATE &#x3D; 8.25;    const int STANDARD &#x3D; 40;    double pay &#x3D; 0.0;    int hours;        printf(&quot;请输入工作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="10.17Study">
+<meta property="og:url" content="http://tachibanaarisu.github.io/2020/10/17/1017study/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="计算薪水 1234567891011121314151617181920212223#include &lt;stdio.h&gt;int main()&amp;#123;    const double RATE &#x3D; 8.25;    const int STANDARD &#x3D; 40;    double pay &#x3D; 0.0;    int hours;        printf(&quot;请输入工作">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://tachibanaarisu.github.io/images/1017study/if%E8%AF%AD%E5%8F%A51.png">
+<meta property="og:image" content="http://tachibanaarisu.github.io/images/1017study/if%E8%AF%AD%E5%8F%A52.png">
+<meta property="article:published_time" content="2020-10-17T15:32:30.000Z">
+<meta property="article:modified_time" content="2020-10-17T16:10:30.962Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="再探if语句">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://tachibanaarisu.github.io/images/1017study/if%E8%AF%AD%E5%8F%A51.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://TachibanaArisu.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-1017study" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/17/1017study/" class="article-date">
+  <time datetime="2020-10-17T15:32:30.000Z" itemprop="datePublished">2020-10-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      10.17Study
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>计算薪水</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">double</span> RATE = <span class="number">8.25</span>;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> STANDARD = <span class="number">40</span>;</span><br><span class="line">    <span class="keyword">double</span> pay = <span class="number">0.0</span>;</span><br><span class="line">    <span class="keyword">int</span> hours;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入工作的小时数：&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,  &amp;hours);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>); </span><br><span class="line">    <span class="keyword">if</span> (hours &gt; STANDARD)&#123;</span><br><span class="line">        pay = STANDARD * RATE + (hours-STANDARD) * (RATE * <span class="number">1.5</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        pay = hours * RATE;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;应付工资：%f\n&quot;</span>, pay);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>判断成绩</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> PASS = <span class="number">60</span>;</span><br><span class="line">    <span class="keyword">int</span> score;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入成绩：&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;score);</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;你输入的成绩是%d.\n&quot;</span>, score);</span><br><span class="line">    <span class="keyword">if</span>(score &lt; PASS)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;很遗憾，这个成绩没有及格。&quot;</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;祝贺你，这个成绩及格了。&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;再见\n&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/images/1017study/if%E8%AF%AD%E5%8F%A51.png" alt="if语句1"></p>
+<p><img src="/images/1017study/if%E8%AF%AD%E5%8F%A52.png" alt="if语句2"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://tachibanaarisu.github.io/2020/10/17/1017study/" data-id="ckgdvrzvp0008kol9g6dyf5k4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%8D%E6%8E%A2if%E8%AF%AD%E5%8F%A5/" rel="tag">再探if语句</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/10/14/1014study2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">if语句接else完整</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/if%E8%AF%AD%E5%8F%A5/" rel="tag">if语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93/" rel="tag">不知道</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%8D%E6%8E%A2if%E8%AF%AD%E5%8F%A5/" rel="tag">再探if语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/" rel="tag">变量学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%8C%E6%95%B4if-else%E8%AF%AD%E5%8F%A5/" rel="tag">完整if-else语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9A%E4%B9%89/" rel="tag">定义</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%AE%E7%82%B9%E8%AE%A1%E7%AE%97/" rel="tag">浮点计算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97/" rel="tag">计算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%AE%8C%E6%88%90/" rel="tag">转移完成</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%BC%80%E5%A7%8B/" rel="tag">转移开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%82%A3%E5%B0%B1%E9%94%99%E8%AF%AF%E5%90%A7/" rel="tag">那就错误吧</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/if%E8%AF%AD%E5%8F%A5/" style="font-size: 10px;">if语句</a> <a href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93/" style="font-size: 10px;">不知道</a> <a href="/tags/%E5%86%8D%E6%8E%A2if%E8%AF%AD%E5%8F%A5/" style="font-size: 10px;">再探if语句</a> <a href="/tags/%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">变量学习</a> <a href="/tags/%E5%AE%8C%E6%95%B4if-else%E8%AF%AD%E5%8F%A5/" style="font-size: 10px;">完整if-else语句</a> <a href="/tags/%E5%AE%9A%E4%B9%89/" style="font-size: 10px;">定义</a> <a href="/tags/%E6%B5%AE%E7%82%B9%E8%AE%A1%E7%AE%97/" style="font-size: 10px;">浮点计算</a> <a href="/tags/%E8%AE%A1%E7%AE%97/" style="font-size: 10px;">计算</a> <a href="/tags/%E8%BD%AC%E7%A7%BB%E5%AE%8C%E6%88%90/" style="font-size: 10px;">转移完成</a> <a href="/tags/%E8%BD%AC%E7%A7%BB%E5%BC%80%E5%A7%8B/" style="font-size: 10px;">转移开始</a> <a href="/tags/%E9%82%A3%E5%B0%B1%E9%94%99%E8%AF%AF%E5%90%A7/" style="font-size: 10px;">那就错误吧</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/17/1017study/">10.17Study</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/14/1014study2/">if语句接else完整</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/14/1014study/">找零计算器升级版</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/12/1012study/">运算符与优先级</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/10/1010(1)/">阵地转移成功</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

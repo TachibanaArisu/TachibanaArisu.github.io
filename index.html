@@ -64,6 +64,147 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-1017study" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/17/1017study/" class="article-date">
+  <time datetime="2020-10-17T15:32:30.000Z" itemprop="datePublished">2020-10-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/17/1017study/">10.17Study</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>计算薪水</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">double</span> RATE = <span class="number">8.25</span>;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> STANDARD = <span class="number">40</span>;</span><br><span class="line">    <span class="keyword">double</span> pay = <span class="number">0.0</span>;</span><br><span class="line">    <span class="keyword">int</span> hours;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入工作的小时数：&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,  &amp;hours);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>); </span><br><span class="line">    <span class="keyword">if</span> (hours &gt; STANDARD)&#123;</span><br><span class="line">        pay = STANDARD * RATE + (hours-STANDARD) * (RATE * <span class="number">1.5</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        pay = hours * RATE;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;应付工资：%f\n&quot;</span>, pay);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>判断成绩</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> PASS = <span class="number">60</span>;</span><br><span class="line">    <span class="keyword">int</span> score;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入成绩：&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;score);</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;你输入的成绩是%d.\n&quot;</span>, score);</span><br><span class="line">    <span class="keyword">if</span>(score &lt; PASS)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;很遗憾，这个成绩没有及格。&quot;</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;祝贺你，这个成绩及格了。&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;再见\n&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/images/1017study/if%E8%AF%AD%E5%8F%A51.png" alt="if语句1"></p>
+<p><img src="/images/1017study/if%E8%AF%AD%E5%8F%A52.png" alt="if语句2"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://tachibanaarisu.github.io/2020/10/17/1017study/" data-id="ckgdvrzvp0008kol9g6dyf5k4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%8D%E6%8E%A2if%E8%AF%AD%E5%8F%A5/" rel="tag">再探if语句</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-1014study2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/14/1014study2/" class="article-date">
+  <time datetime="2020-10-14T05:54:15.000Z" itemprop="datePublished">2020-10-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/14/1014study2/">if语句接else完整</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>会在不同的情况下输出不同内容，防止输出错误</p>
+<p>接“找零计算器”</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 计算找零</span></span><br><span class="line">    <span class="keyword">if</span> (bill &gt;= price)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;应该找您：%d\n&quot;</span>, bill - price);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;你的钱不够\n&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://tachibanaarisu.github.io/2020/10/14/1014study2/" data-id="ckgdvrzvn0005kol906e743fx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AE%8C%E6%95%B4if-else%E8%AF%AD%E5%8F%A5/" rel="tag">完整if-else语句</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-1014study" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/14/1014study/" class="article-date">
+  <time datetime="2020-10-14T05:19:36.000Z" itemprop="datePublished">2020-10-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/14/1014study/">找零计算器升级版</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用了if语句的改进版</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 初始化</span></span><br><span class="line">    <span class="keyword">int</span> price = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> bill = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 读入金额和票面</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入金额：&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;price);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入票面：&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;bill);</span><br><span class="line">    <span class="comment">// 计算找零</span></span><br><span class="line">    <span class="keyword">if</span> (bill &gt;= price)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;应该找您：%d\n&quot;</span>, bill - price);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>注释：   // ”注释内容“</p>
+<p>程序不会执行任何操作 用来给”人类“了解代码意义</p>
+<p><img src="/images/1014study/%E6%B3%A8%E9%87%8A.png" alt="注释"></p>
+<p>青春去世器</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> MINOR = <span class="number">35</span>;</span><br><span class="line">    <span class="keyword">int</span> age = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入你的年龄：&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;age);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;你的年龄是%d岁。\n&quot;</span>, age);</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(age&lt;MINOR)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;年轻是美好的,&quot;</span>); </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;年龄决定了你的精神世界，好好珍惜吧。\n&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://tachibanaarisu.github.io/2020/10/14/1014study/" data-id="ckgdvrzvm0004kol948vtc93x" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/if%E8%AF%AD%E5%8F%A5/" rel="tag">if语句</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-1012study" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/12/1012study/" class="article-date">
@@ -98,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/10/12/1012study/" data-id="ckg647plf0003uol9gmyycht0" class="article-share-link">Share</a>
+      <a data-url="http://tachibanaarisu.github.io/2020/10/12/1012study/" data-id="ckgdvrzvl0003kol9c5c1aynr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97/" rel="tag">计算</a></li></ul>
@@ -139,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/10/10/1010(1)/" data-id="ckg647plb0001uol951a7e2jp" class="article-share-link">Share</a>
+      <a data-url="http://tachibanaarisu.github.io/2020/10/10/1010(1)/" data-id="ckgdvrzvg0001kol934ah1rmg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%AE%8C%E6%88%90/" rel="tag">转移完成</a></li></ul>
@@ -178,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/10/10/10.10/" data-id="ckg647pl40000uol94220fnht" class="article-share-link">Share</a>
+      <a data-url="http://tachibanaarisu.github.io/2020/10/10/10.10/" data-id="ckgdvrzv80000kol9enczdr6j" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%BC%80%E5%A7%8B/" rel="tag">转移开始</a></li></ul>
@@ -229,7 +370,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/10/03/hello-world/" data-id="ckg647plr000juol9d52g2fxs" class="article-share-link">Share</a>
+      <a data-url="http://tachibanaarisu.github.io/2020/10/03/hello-world/" data-id="ckgdvrzw3000vkol95rg6409p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -274,7 +415,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/09/19/919Study/" data-id="ckg647plq000iuol93n03e9qb" class="article-share-link">Share</a>
+      <a data-url="http://tachibanaarisu.github.io/2020/09/19/919Study/" data-id="ckgdvrzw2000ukol9a0ophu3n" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%AE%E7%82%B9%E8%AE%A1%E7%AE%97/" rel="tag">浮点计算</a></li></ul>
@@ -319,7 +460,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/09/18/918study/" data-id="ckg647plp000guol9c1czblaz" class="article-share-link">Share</a>
+      <a data-url="http://tachibanaarisu.github.io/2020/09/18/918study/" data-id="ckgdvrzvv000fkol92kziff6q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AE%9A%E4%B9%89/" rel="tag">定义</a></li></ul>
@@ -360,7 +501,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/09/16/916Study/" data-id="ckg647plo000fuol9ecou3evx" class="article-share-link">Share</a>
+      <a data-url="http://tachibanaarisu.github.io/2020/09/16/916Study/" data-id="ckgdvrzvt000dkol9644vaqb4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/" rel="tag">变量学习</a></li></ul>
@@ -372,90 +513,12 @@
 
 
   
-    <article id="post-914err" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/14/914err/" class="article-date">
-  <time datetime="2020-09-14T15:05:57.000Z" itemprop="datePublished">2020-09-14</time>
-</a>
+
+
+  <nav id="page-nav">
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/14/914err/">错误</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>有的人 写着写着</p>
-<p>就错误了</p>
-<p><img src="/images/914err/error.png" alt="error"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/09/14/914err/" data-id="ckg647plg0004uol93t9n6xnv" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%82%A3%E5%B0%B1%E9%94%99%E8%AF%AF%E5%90%A7/" rel="tag">那就错误吧</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-914study" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/14/914study/" class="article-date">
-  <time datetime="2020-09-14T14:06:06.000Z" itemprop="datePublished">2020-09-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/14/914study/">9.14 Study</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>人生啊 只有error</p>
-<p>今天学了hello world 就这样</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!\n&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://tachibanaarisu.github.io/2020/09/14/914study/" data-id="ckg647plh0005uol9e8i3aax4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93/" rel="tag">不知道</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+  </nav>
 
 </section>
         
@@ -468,7 +531,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93/" rel="tag">不知道</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/" rel="tag">变量学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9A%E4%B9%89/" rel="tag">定义</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%AE%E7%82%B9%E8%AE%A1%E7%AE%97/" rel="tag">浮点计算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97/" rel="tag">计算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%AE%8C%E6%88%90/" rel="tag">转移完成</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%BC%80%E5%A7%8B/" rel="tag">转移开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%82%A3%E5%B0%B1%E9%94%99%E8%AF%AF%E5%90%A7/" rel="tag">那就错误吧</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/if%E8%AF%AD%E5%8F%A5/" rel="tag">if语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93/" rel="tag">不知道</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%8D%E6%8E%A2if%E8%AF%AD%E5%8F%A5/" rel="tag">再探if语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/" rel="tag">变量学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%8C%E6%95%B4if-else%E8%AF%AD%E5%8F%A5/" rel="tag">完整if-else语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9A%E4%B9%89/" rel="tag">定义</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%AE%E7%82%B9%E8%AE%A1%E7%AE%97/" rel="tag">浮点计算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97/" rel="tag">计算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%AE%8C%E6%88%90/" rel="tag">转移完成</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AC%E7%A7%BB%E5%BC%80%E5%A7%8B/" rel="tag">转移开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%82%A3%E5%B0%B1%E9%94%99%E8%AF%AF%E5%90%A7/" rel="tag">那就错误吧</a></li></ul>
     </div>
   </div>
 
@@ -478,7 +541,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93/" style="font-size: 10px;">不知道</a> <a href="/tags/%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">变量学习</a> <a href="/tags/%E5%AE%9A%E4%B9%89/" style="font-size: 10px;">定义</a> <a href="/tags/%E6%B5%AE%E7%82%B9%E8%AE%A1%E7%AE%97/" style="font-size: 10px;">浮点计算</a> <a href="/tags/%E8%AE%A1%E7%AE%97/" style="font-size: 10px;">计算</a> <a href="/tags/%E8%BD%AC%E7%A7%BB%E5%AE%8C%E6%88%90/" style="font-size: 10px;">转移完成</a> <a href="/tags/%E8%BD%AC%E7%A7%BB%E5%BC%80%E5%A7%8B/" style="font-size: 10px;">转移开始</a> <a href="/tags/%E9%82%A3%E5%B0%B1%E9%94%99%E8%AF%AF%E5%90%A7/" style="font-size: 10px;">那就错误吧</a>
+      <a href="/tags/if%E8%AF%AD%E5%8F%A5/" style="font-size: 10px;">if语句</a> <a href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93/" style="font-size: 10px;">不知道</a> <a href="/tags/%E5%86%8D%E6%8E%A2if%E8%AF%AD%E5%8F%A5/" style="font-size: 10px;">再探if语句</a> <a href="/tags/%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">变量学习</a> <a href="/tags/%E5%AE%8C%E6%95%B4if-else%E8%AF%AD%E5%8F%A5/" style="font-size: 10px;">完整if-else语句</a> <a href="/tags/%E5%AE%9A%E4%B9%89/" style="font-size: 10px;">定义</a> <a href="/tags/%E6%B5%AE%E7%82%B9%E8%AE%A1%E7%AE%97/" style="font-size: 10px;">浮点计算</a> <a href="/tags/%E8%AE%A1%E7%AE%97/" style="font-size: 10px;">计算</a> <a href="/tags/%E8%BD%AC%E7%A7%BB%E5%AE%8C%E6%88%90/" style="font-size: 10px;">转移完成</a> <a href="/tags/%E8%BD%AC%E7%A7%BB%E5%BC%80%E5%A7%8B/" style="font-size: 10px;">转移开始</a> <a href="/tags/%E9%82%A3%E5%B0%B1%E9%94%99%E8%AF%AF%E5%90%A7/" style="font-size: 10px;">那就错误吧</a>
     </div>
   </div>
 
@@ -500,23 +563,23 @@
       <ul>
         
           <li>
+            <a href="/2020/10/17/1017study/">10.17Study</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/14/1014study2/">if语句接else完整</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/14/1014study/">找零计算器升级版</a>
+          </li>
+        
+          <li>
             <a href="/2020/10/12/1012study/">运算符与优先级</a>
           </li>
         
           <li>
             <a href="/2020/10/10/1010(1)/">阵地转移成功</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/10/10.10/">阵地转移计划</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/03/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/19/919Study/">9.19Study</a>
           </li>
         
       </ul>
